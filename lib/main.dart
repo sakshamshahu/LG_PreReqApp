@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.yellow,
       ),
-      home: const MyHomePage(title: 'Liquid Galaxy'),
+      home: const MyHomePage(title: 'Liquid Galaxy Pre-Req App'),
     );
   }
 }
