@@ -35,13 +35,15 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: Center(
           child: Column(
+            //using mainAxisAlignment to center the children vertically (column style arrangement)
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              //dynamic logo loading from Liq-Gal website
               FadeInImage.assetNetwork(
                   placeholder: 'assets/images/liquidloader.gif',
                   image:
                       'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzI4JzY6oUy-dQaiW-HLmn5NQ7qiw7NUOoK-2cDU9cI6JwhPrNv0EkCacuKWFViEgXYrCFzlbCtHZQffY6a73j6_ATFjfeU7r6OxXxN5K8sGjfOlp3vvd6eCXZrozlu34fUG5_cKHmzZWa4axb-vJRKjLr2tryz0Zw30gTv3S0ET57xsCiD25WMPn3wA/s800/LIQUIDGALAXYLOGO.png'),
-              ...buttons(context)
+              ...buttons(context) //importing the buttons
             ],
           ),
         ));

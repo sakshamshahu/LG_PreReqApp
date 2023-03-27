@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//exporting button and its properties from this dart file to avoid code clutter
 
 class Button {
   MaterialColor color;
@@ -15,6 +16,7 @@ List<ElevatedButton> buttons(BuildContext context) {
     Button(Colors.red, 'I am the last ONE', 'Red'),
   ];
 
+//using map method - The map uses the indices of this list as keys and the corresponding objects as values (helps us iterate through the List)
   var buttons = <ElevatedButton>[];
   buttColors.asMap().forEach((key, value) {
     buttons.add(
@@ -24,11 +26,12 @@ List<ElevatedButton> buttons(BuildContext context) {
           var snackBar = SnackBar(content: Text(text));
           ScaffoldMessenger.of(context)
             ..removeCurrentSnackBar()
-            ..showSnackBar(snackBar);
+            ..showSnackBar(snackBar); //responsive snackbar on button press
         },
         style: ElevatedButton.styleFrom(
             backgroundColor: value.color, foregroundColor: Colors.black),
-        child: Text(" THIS IS THE ${value.buttoncolor} BUTTON"),
+        child: Text(
+            " THIS IS THE ${value.buttoncolor} BUTTON"), //recognising buttons through their color
       ),
     );
   });
