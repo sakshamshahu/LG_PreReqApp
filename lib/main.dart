@@ -43,14 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
             FadeInImage.assetNetwork(
             placeholder: 'assets/images/liquidloader.gif', 
             image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzI4JzY6oUy-dQaiW-HLmn5NQ7qiw7NUOoK-2cDU9cI6JwhPrNv0EkCacuKWFViEgXYrCFzlbCtHZQffY6a73j6_ATFjfeU7r6OxXxN5K8sGjfOlp3vvd6eCXZrozlu34fUG5_cKHmzZWa4axb-vJRKjLr2tryz0Zw30gTv3S0ET57xsCiD25WMPn3wA/s800/LIQUIDGALAXYLOGO.png'),
-            
-          //   ElevatedButton(
-          //   style: const ButtonStyle(backgroundColor: MaterialStatePropertyAll<Color>(Colors.green)),
-          //   onPressed: (){
-          //     print('hh');
-          //   },
-          //   child: const Text('This is Button 1'),
-          // )
+    
             ...buttons(context)
           ],
         ),
