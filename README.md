@@ -1,4 +1,4 @@
-#Liquid Galaxy Pre-Req App
+# Liquid Galaxy Pre-Req App
 <img alt="LG-logo" src="assets/images/liquidlogo.png" style="height: 300px;" />
 ## About the repo
 
