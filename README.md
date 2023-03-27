@@ -11,10 +11,15 @@ Making this app was definitely a good learning experience considering me being n
 
 ## Some Resources...📔
 https://snapcraft.io/install/flutter/arch
+
 https://developer.android.com/studio/command-line/sdkmanager
+
 https://docs.flutter.dev/get-started/install/linux#android-setup
+
 https://docs.flutter.dev/get-started/flutter-for/android-devs
+
 https://docs.flutter.dev/cookbook/images/fading-in-images
+
 https://api.flutter.dev/flutter/material/ElevatedButton-class.html
 
 ## Application Screenshot 📱
