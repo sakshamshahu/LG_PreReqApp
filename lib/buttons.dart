@@ -9,14 +9,14 @@ class Button {
 
 List<ElevatedButton> buttons(BuildContext context) {
   List<Button> buttColors = <Button>[
-    Button(Colors.green,  'THIS IS ONE', 'Green'),
-    Button(Colors.yellow, '#METWO' , 'Yellow'),
+    Button(Colors.green, 'THIS IS ONE', 'Green'),
+    Button(Colors.yellow, '#METWO', 'Yellow'),
     Button(Colors.blue, 'I am threeeee', 'Blue'),
     Button(Colors.red, 'I am the last ONE', 'Red'),
   ];
 
-var buttons = <ElevatedButton>[];
-buttColors.asMap().forEach((key, value) {
+  var buttons = <ElevatedButton>[];
+  buttColors.asMap().forEach((key, value) {
     buttons.add(
       ElevatedButton(
         onPressed: () {
@@ -24,14 +24,11 @@ buttColors.asMap().forEach((key, value) {
           var snackBar = SnackBar(content: Text(text));
           ScaffoldMessenger.of(context)
             ..removeCurrentSnackBar()
-            ..showSnackBar(snackBar); 
+            ..showSnackBar(snackBar);
         },
         style: ElevatedButton.styleFrom(
-          backgroundColor: value.color,
-          foregroundColor: Colors.black
-        ),
-        child: Text(
-            " THIS IS THE ${value.buttoncolor} BUTTON"), 
+            backgroundColor: value.color, foregroundColor: Colors.black),
+        child: Text(" THIS IS THE ${value.buttoncolor} BUTTON"),
       ),
     );
   });
